@@ -30,7 +30,7 @@ class EventsLinkCreator:
         return HttpResponse(
             body={
                 "data": {
-                    "type": "EventLink",
+                    "Type": "EventLink",
                     "count": 1,
                     "attributes": {
                         "link": new_link,

@@ -27,7 +27,7 @@ class EventsCreator:
         return HttpResponse(
             body={
                 "data": {
-                    "type": "Event",
+                    "Type": "Event",
                     "count": 1,
                     "attributes": {
                         "event_name": event_name

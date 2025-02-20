@@ -32,7 +32,7 @@ class SubscribersCreator:
         return HttpResponse(
             body={
                 "data": {
-                    "type": "Subscriber",
+                    "Type": "Subscriber",
                     "count": 1,
                     "attributes": subscriber_info
                 }
