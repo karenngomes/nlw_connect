@@ -11,7 +11,7 @@ class EventsCreator:
         event_name  = events_info["name"]
 
         self.__check_event(event_name)
-        self.__inser_event(event_name)
+        self.__insert_event(event_name)
 
         return(self.__format_response(event_name))
 
@@ -20,7 +20,7 @@ class EventsCreator:
 
         if response: raise Exception("Event already exists!")
 
-    def __inser_event(self, event_name: str) -> None:
+    def __insert_event(self, event_name: str) -> None:
         self.__events_repo.insert(event_name)
 
     def __format_response(self, event_name: str) -> HttpResponse:
